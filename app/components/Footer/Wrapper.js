@@ -4,7 +4,7 @@ const Wrapper = styled.footer`
   // display: flex;
   // justify-content: space-between;
   padding: 1em 0;
-  border-top: 1px solid #aaaaaa;
+  // border-top: 1px solid #aaaaaa;
   background-color: #eeeeee;
 `;
 

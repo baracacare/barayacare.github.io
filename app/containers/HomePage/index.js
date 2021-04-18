@@ -21,6 +21,7 @@ import {
 } from 'containers/App/selectors';
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
+import { Card, Container, Row, Col, Carousel, Image } from 'react-bootstrap';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
@@ -33,7 +34,6 @@ import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import { Card, Container, Row, Col, Carousel, Image } from 'react-bootstrap';
 import Img1 from './image-1.jpg';
 import Img2 from './image-2.jpg';
 import Img3 from './image-3.jpg';
@@ -85,11 +85,8 @@ export function HomePage({
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h3>First slide label</h3>
-                      <p>
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
-                      </p>
+                      <h3>Gerakan Jaga Masjid</h3>
+                      <p>Gerakan Jaga Masjid Aman Nyaman Sehat</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -100,10 +97,8 @@ export function HomePage({
                     />
 
                     <Carousel.Caption>
-                      <h3>Second slide label</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
+                      <h3>Santunan Yatim Piatu</h3>
+                      <p>Santunan kepada Yatim Piatu</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -114,10 +109,9 @@ export function HomePage({
                     />
 
                     <Carousel.Caption>
-                      <h3>Third slide label</h3>
+                      <h3>Bantuan Sesama</h3>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl
-                        consectetur.
+                        Bantuan kepada sesama manusia yang lebih membutuhkan
                       </p>
                     </Carousel.Caption>
                   </Carousel.Item>

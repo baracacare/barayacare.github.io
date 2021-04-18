@@ -31,8 +31,8 @@ export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="%s - Baraya Care"
+        defaultTitle="Baraya Care"
       >
         <meta name="description" content="A React.js Boilerplate application" />
       </Helmet>

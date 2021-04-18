@@ -11,9 +11,9 @@ function Header() {
         <img alt="brand-logo" src={Brand} height="30" />
       </Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link href="#features">Update</Nav.Link>
+        {/* <Nav.Link href="#features">Update</Nav.Link>
         <Nav.Link href="#home">Donasi</Nav.Link>
-        <Nav.Link href="#contact">Kontak</Nav.Link>
+        <Nav.Link href="#contact">Kontak</Nav.Link> */}
       </Nav>
       <LocaleToggle />
     </Navbar>

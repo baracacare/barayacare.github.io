@@ -1,28 +1,22 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 
-import A from './A';
-import Img from './Img';
-import NavBar from './NavBar';
-import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
-import messages from './messages';
+import LocaleToggle from 'containers/LocaleToggle';
+import {
+  Nav,
+  Navbar,
+} from 'react-bootstrap';
 
 function Header() {
   return (
-    <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
-      </A>
-      <NavBar>
-        <HeaderLink to="/">
-          <FormattedMessage {...messages.home} />
-        </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
-        </HeaderLink>
-      </NavBar>
-    </div>
+    <Navbar bg="primary" variant="dark">
+      <Navbar.Brand href="#home">Baraya Care</Navbar.Brand>
+      <Nav className="mr-auto">
+        <Nav.Link href="#features">Update</Nav.Link>
+        <Nav.Link href="#home">Donasi</Nav.Link>
+        <Nav.Link href="#contact">Kontak</Nav.Link>
+      </Nav>
+      <LocaleToggle />
+    </Navbar>
   );
 }
 

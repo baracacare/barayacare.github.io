@@ -22,7 +22,8 @@ const DEFAULT_LOCALE = 'en';
 // prettier-ignore
 const appLocales = [
   'en',
-  'de',
+  // 'id',
+  // 'de',
 ];
 
 const formatTranslationMessages = (locale, messages) => {

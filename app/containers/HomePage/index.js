@@ -33,6 +33,11 @@ import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
+import { Card, Container, Row, Col, Carousel, Image } from 'react-bootstrap';
+import Img1 from './image-1.jpg';
+import Img2 from './image-2.jpg';
+import Img3 from './image-3.jpg';
+
 const key = 'home';
 
 export function HomePage({
@@ -67,31 +72,79 @@ export function HomePage({
         />
       </Helmet>
       <div>
+        <div>
+          <br />
+          <Container>
+            <Row>
+              <Col>
+                <Carousel>
+                  <Carousel.Item>
+                    <Image
+                      className="d-block w-100"
+                      src={Img1}
+                      alt="First slide"
+                    />
+                    <Carousel.Caption>
+                      <h3>First slide label</h3>
+                      <p>
+                        Nulla vitae elit libero, a pharetra augue mollis
+                        interdum.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={Img2}
+                      alt="Second slide"
+                    />
+
+                    <Carousel.Caption>
+                      <h3>Second slide label</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={Img3}
+                      alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                      <h3>Third slide label</h3>
+                      <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <CenteredSection>
-          <H2>
-            <FormattedMessage {...messages.startProjectHeader} />
-          </H2>
-          <p>
-            <FormattedMessage {...messages.startProjectMessage} />
-          </p>
+          <H2>{/* <FormattedMessage {...messages.startProjectHeader} /> */}</H2>
+          <p>{/* <FormattedMessage {...messages.startProjectMessage} /> */}</p>
         </CenteredSection>
         <Section>
-          <H2>
-            <FormattedMessage {...messages.trymeHeader} />
-          </H2>
+          <H2>{/* <FormattedMessage {...messages.trymeHeader} /> */}</H2>
           <Form onSubmit={onSubmitForm}>
             <label htmlFor="username">
-              <FormattedMessage {...messages.trymeMessage} />
+              {/* <FormattedMessage {...messages.trymeMessage} /> */}
               <AtPrefix>
-                <FormattedMessage {...messages.trymeAtPrefix} />
+                {/* <FormattedMessage {...messages.trymeAtPrefix} /> */}
               </AtPrefix>
-              <Input
+              {/* <Input
                 id="username"
                 type="text"
                 placeholder="mxstbr"
                 value={username}
                 onChange={onChangeUsername}
-              />
+              /> */}
             </label>
           </Form>
           <ReposList {...reposListProps} />
